@@ -1,0 +1,140 @@
+* {
+    font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+
+body {
+    background-color: rgb(224, 224, 224);
+    margin: 0;
+}
+
+/* Navigasi Bar 
+ ***************************************************************/
+nav {
+    display: flex;
+    background-color: rgb(240, 240, 240);
+    padding-bottom: 0px;
+    height: 9vh;
+}
+
+nav .left {
+    flex: 50%;
+    /* background-color: aquamarine; */
+    display: flex;
+    padding-top: 0;
+
+}
+
+nav .left ul {
+    display: flex;
+    /* background-color: burlywood; */
+    width: 50%;
+    justify-content: space-evenly;
+    list-style: none;
+    align-items: center;
+    margin-left: 50px;
+}
+
+nav .left ul li a {
+    color: rgb(70, 70, 70);
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+    cursor: pointer;
+    /* background-color: yellowgreen; */
+}
+
+nav .left ul li a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    /* display: block; */
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: rgb(0, 0, 0);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+nav .left ul li a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+
+nav .right {
+    flex: 50%;
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+nav .right span {
+    /* background-color: black; */
+    background-color: rgb(56, 56, 56);
+    color: white;
+    margin-right: 150px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+nav .right span a {
+    text-decoration: none;
+    color: white;
+}
+
+/*  Main Content
+**************************************************************** */
+
+form {
+    /* background-color: aqua; */
+    /* margin: 90px; */
+    width: 350px;
+    margin: 50px auto;
+    color: rgb(70, 70, 70);
+    /* padding: 8px; */
+}
+
+
+form input,
+select,
+textarea {
+    background-color: rgb(255, 255, 255);
+    width: 97%;
+    /* border: 1px solid rgb(197, 197, 197); */
+    padding: 5px;
+    margin: 8px 0;
+    /* box-shadow: 0 0 2px #7c7c7c; */
+}
+
+form select {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+form button {
+    background-color: rgb(34, 34, 34);
+    border: none;
+    padding: 5px 25px;
+    border-radius: 5px;
+    margin-top: 10px;
+    /* font-weight: bold; */
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: right;
+
+}
+
+.contact form input,
+.contact form select,
+.contact form textarea {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #c9c9c9;
+}

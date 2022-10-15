@@ -1,0 +1,293 @@
+* {
+    font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+
+body {
+    background-color: rgb(224, 224, 224);
+    margin: 0;
+}
+
+/* Navigation Bar
+****************************************************************** */
+nav {
+    display: flex;
+    background-color: rgb(240, 240, 240);
+    padding-bottom: 0px;
+    height: 9vh;
+}
+
+nav .left {
+    flex: 50%;
+    /* background-color: aquamarine; */
+    display: flex;
+    padding-top: 0;
+
+}
+
+nav .left ul {
+    display: flex;
+    /* background-color: burlywood; */
+    width: 50%;
+    justify-content: space-evenly;
+    list-style: none;
+    align-items: center;
+    margin-left: 50px;
+}
+
+nav .left ul li a {
+    color: rgb(70, 70, 70);
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+    cursor: pointer;
+    /* background-color: yellowgreen; */
+}
+
+nav .left ul li a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    /* display: block; */
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: rgb(0, 0, 0);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+nav .left ul li a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+@media screen and (max-height: 300px) {
+    nav .left ul ul {
+        margin-top: 40px;
+    }
+}
+
+nav .right {
+    flex: 50%;
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+nav .right span {
+    /* background-color: black; */
+    background-color: rgb(56, 56, 56);
+    /* color: white; */
+    margin-right: 150px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+nav .right span a {
+    text-decoration: none;
+    color: white;
+}
+
+/* 
+FORM ADD PEOJECT
+*********************************************************************** */
+section {
+    /* background-color: bisque; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    margin: 0;
+}
+
+form {
+    /* background-color: burlywood; */
+    padding: 10px;
+    width: 27%;
+    margin-top: -20px;
+    /* box-sizing: border-box; */
+}
+
+
+.project-name input {
+    /* background-color: aquamarine; */
+    width: 97%;
+    border: none;
+    box-shadow: 0 0 20px #c9c9c9;
+    padding: 5px 2px;
+    border-radius: 5px;
+}
+
+.project-date {
+    /* background-color: #7c7c7c; */
+    width: 100%;
+    display: flex;
+    /* justify-content: flex-start; */
+}
+
+.project-date .date-left,
+.project-date .date-right {
+    flex: 1;
+}
+
+.project-date .date-left input,
+.project-date .date-right input {
+    /* background-color: #7c7c7c; */
+    width: 90%;
+    border-radius: 5px;
+    padding: 4px;
+    border: none;
+    box-shadow: 0 0 20px #c9c9c9;
+}
+
+.project-desc textarea,
+.tech-left input,
+.tech-right input {
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 20px #c9c9c9;
+}
+
+.project-name label,
+.project-desc label,
+.project-img label,
+.project-date label,
+.project-tech>label {
+    display: flex;
+    padding-bottom: 5px;
+    padding-top: 20px;
+}
+
+
+.technologies {
+    /* background-color: aquamarine; */
+    display: flex;
+}
+
+.technologies .tech-left,
+.technologies .tech-right {
+    flex: 1;
+}
+
+
+.project-img span {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    padding: 1px 0;
+    border-radius: 5px;
+    /* border: 1px solid gray; */
+    box-shadow: 0 0 20px #c9c9c9;
+    box-sizing: border-box;
+    justify-content: space-between;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0);
+    margin-bottom: 10px;
+}
+
+.project-img span i {
+    color: black;
+    padding-top: 5px;
+}
+
+.project-img span input::-webkit-file-upload-button {
+    border: none;
+    padding: 5px 5px;
+    background-color: rgba(180, 180, 180, 0.747);
+    color: rgb(0, 0, 0);
+    /* font-weight: bold; */
+    border-radius: 5px;
+    cursor: pointer;
+    /* width: 100%; */
+    /* margin: 0; */
+}
+
+/*  
+Section Display Project
+**********************************************************************/
+.project {
+    /* background-color: white; */
+    background-image: url(../images/wallpaper3.jpg);
+    background-position: top;
+
+
+}
+
+h1 {
+    text-align: center;
+    padding: 35px;
+
+    color: rgb(70, 70, 70);
+}
+
+.container {
+    /* background-color: turquoise; */
+    margin: 0 20px;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card {
+    width: 270px;
+    /* border: 1px solid rgba(163, 163, 163, 0.432); */
+    padding: 15px 13px;
+    box-shadow: 0 0 7px #c4c4c4;
+    background-color: rgb(233, 233, 233);
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.card h3 {
+    /* background-color: #7c7c7c; */
+    margin-top: 5px;
+    margin-bottom: 1px;
+    cursor: pointer;
+    color: rgb(61, 99, 100);
+}
+
+.card span {
+    color: rgb(41, 41, 41);
+    font-size: 14px;
+}
+
+.card p {
+    margin-top: 7px;
+    margin-bottom: 10px;
+}
+
+.card .tech {
+    /* background-color: yellowgreen; */
+    margin-bottom: 20px;
+    /* background-color: yellowgreen; */
+    width: 50%;
+    font-size: larger;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(46, 46, 46);
+}
+
+.card .project-option {
+    display: flex;
+    /* background-color: tomato; */
+    justify-content: space-between;
+}
+
+.card .project-option button {
+    border: none;
+    background-color: rgb(73, 68, 95);
+    color: white;
+    padding: 5px 47px;
+    border-radius: 5px;
+    cursor: pointer;
+}
