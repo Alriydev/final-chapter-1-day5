@@ -69,11 +69,11 @@ nav .left ul li a:hover:after {
     left: 0;
 }
 
-@media screen and (max-height: 300px) {
+/* @media screen and (max-height: 300px) {
     nav .left ul ul {
         margin-top: 40px;
     }
-}
+} */
 
 
 

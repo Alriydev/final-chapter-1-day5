@@ -210,8 +210,8 @@ form {
 Section Display Project
 **********************************************************************/
 .project {
-    /* background-color: white; */
-    background-image: url(../images/wallpaper3.jpg);
+    background-color: white;
+    /* background-image: url(../images/wallpaper3.jpg); */
     background-position: top;
 
 
@@ -243,7 +243,7 @@ h1 {
     /* border: 1px solid rgba(163, 163, 163, 0.432); */
     padding: 15px 13px;
     box-shadow: 0 0 7px #c4c4c4;
-    background-color: rgb(233, 233, 233);
+    background-color: rgb(190, 190, 190);
     border-radius: 10px;
     margin-bottom: 30px;
 }
@@ -252,8 +252,12 @@ h1 {
     /* background-color: #7c7c7c; */
     margin-top: 5px;
     margin-bottom: 1px;
-    cursor: pointer;
-    color: rgb(61, 99, 100);
+}
+
+.card h3 a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
 }
 
 .card span {
